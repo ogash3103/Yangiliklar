@@ -10,6 +10,11 @@ html{
 {
   box-sizing: initial; /* bil*/
 }
+*:focus
+{
+ outline: 2px dashed #1E90FF;
+ outline-offset: 2px;
+}
 
 
 body{
@@ -22,7 +27,7 @@ body{
   font-weight: 400;
   font-size:16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #000;
   color: #222;
 }
 
@@ -126,6 +131,134 @@ a{
   margin-right: 12px;
 
 }
+
+/* latest-videos */
+
+
+.latest-videos {
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  padding: 54px;
+}
+.latest-viseos-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Bebas Neue" "Arial" sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.latest-viseos-divider {
+  height: 1px;
+  border: 0;
+  background-color: #999;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.latest-viseos-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 24px;
+}
+.latesst-videos-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+/* item-latest-videos */
+
+.item-latest-videos {
+  display: flex;
+}
+.item-latest-videos-img {
+  width: 160px;
+  height: auto
+  ;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.item-latest-videos-info {
+  padding: 16px;
+}
+.item-latest-viseos-heading {
+  font-family: "Bebas Neue" "Arial" sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.item-latest-videos-link {
+  display: inline-block;
+  color: #222;
+}
+.item-latest-videos-link:hover {
+  color: #1E90FF;
+}
+.item-latest-videos-link:active {
+  opacity: 0.6;
+}
+.item-latest-videos-mata {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 14px;
+  line-height: normal;
+}
+.item-latest-videos-mata-item
+{
+  display: flex;
+  align-items: center;
+}
+.item-latest-videos-mata-item:not(:last-child)
+{
+  margin-right: 24px;
+}
+.item-latest-videos-mata-item::before
+{
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-position:center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.item-latest-videos-mata-item-published-at::before
+{
+  background-image: url("../img/icone-cloce.svg");
+}
+.item-latest-videos-mata-item-views::before
+{
+  background-image: url("../img/icone-views.svg");
+}
+/* load-more-button */
+.load-more-btn
+{
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  background-color:#1E90FF ;
+  color: #fff;
+  cursor: pointer;
+}
+.load-more-btn:hover
+{
+  background-color: rgba(30, 144, 255, 0.8);
+}
+.load-more-btn:active
+{
+  background-color: rgba(30, 144, 255, 0.6);
+}
+
 /* ritina bg */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
